@@ -46,7 +46,7 @@ remove_files(7)
 st.title("Hablalo rey 🗣️")
 image = Image.open('carlos.jpg')
 
-st.image(image,width=300)
+st.image(image,width=3000)
 st.subheader("Sube la imagen que queras y te la traducimos asi de facilito papito")
 
 cam_ = st.checkbox("usa la camarita")
