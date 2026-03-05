@@ -43,13 +43,13 @@ remove_files(7)
 
 
 
-st.title("Reconocimiento Óptico de Caracteres")
-st.subheader("Elige la fuente de la imágen, esta puede venir de la cámara o cargando un archivo")
+st.title("Hablalo rey 🗣️")
+st.subheader("Sube la imagen que queras y te la traducimos asi de facilito papito")
 
-cam_ = st.checkbox("Usar Cámara")
+cam_ = st.checkbox("usa la camarita")
 
 if cam_ :
-   img_file_buffer = st.camera_input("Toma una Foto")
+   img_file_buffer = st.camera_input("toma la fotico")
 else :
    img_file_buffer = None
    
@@ -57,7 +57,7 @@ with st.sidebar:
       st.subheader("Procesamiento para Cámara")
       filtro = st.radio("Filtro para imagen con cámara",('Sí', 'No'))
 
-bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg"])
+bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg", "webp"])
 if bg_image is not None:
     uploaded_file=bg_image
     st.image(uploaded_file, caption='Imagen cargada.', use_container_width=True)
