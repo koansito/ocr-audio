@@ -60,7 +60,7 @@ with st.sidebar:
       st.subheader("Procesamiento para Cámara")
       filtro = st.radio("Filtro para imagen con cámara",('Sí', 'No'))
 
-bg_image = st.file_uploader("Cargar Imagen:", type=["png", "jpg", "webp"])
+bg_image = st.file_uploader("sube la fotito:", type=["png", "jpg", "webp"])
 if bg_image is not None:
     uploaded_file=bg_image
     st.image(uploaded_file, caption='Imagen cargada.', use_container_width=True)
